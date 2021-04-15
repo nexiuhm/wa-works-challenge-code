@@ -1,5 +1,5 @@
 
 
-export default function hey (){
+export default function c() {
 
 }

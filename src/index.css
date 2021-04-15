@@ -6,7 +6,7 @@
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
-  
+  user-select: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(2,0,36);

@@ -32,12 +32,12 @@ export default function useCompositeFilter<T>(baseData: T[]) {
 
 
   useEffect(() => {
-    
+
     console.log("filters aktiv:", filters)
 
 
     // Settil til orginal data om ingen aktive filtere
-    if(filters.length === 0) { setFilteredData(baseData); return;}
+    if (filters.length === 0) { setFilteredData(baseData); return; }
 
     const filterResult = baseData.filter((o) => {
 
@@ -52,7 +52,7 @@ export default function useCompositeFilter<T>(baseData: T[]) {
     })
 
     setFilteredData(filterResult);
-    console.log("debug: resultat",filterResult)
+    console.log("debug: resultat", filterResult)
 
 
 

@@ -11,7 +11,7 @@ import getMovieBySearch from './Api';
 import Popup from "./components/Popup"
 import MovieDetails from "./components/MovieDetails"
 import BlurContainer from "./components/blurContainer"
-import { bodyBase,appBase } from './styles/Styles';
+import { bodyBase, appBase } from './styles/Styles';
 
 
 const spaceThemedMovies = ["interstellar", "alien", "2001: A Space Odyssey", "Gravity", "Star Wars", "Europa Report", "Moon", "Sunshine", "Apollo 13", "Contact", "The Martian", "Event Horizon", "Elysium", "Avatar", "Pitch Black"];
@@ -35,7 +35,7 @@ export default function App() {
   /* Init */
   const [movieData, setMovieData] = React.useState<MovieData[]>([]);
   const [filteredMovies, setFilteredMovies] = React.useState<MovieData[] | null>([]);
-  const {filteredData, addFilter, removeFilter} = useCompositeFilter<MovieData>(movieData)
+  const { filteredData, addFilter, removeFilter } = useCompositeFilter<MovieData>(movieData)
   const [selectedMovie, setSelectedMovie] = React.useState<MovieData>()
 
 
@@ -62,8 +62,8 @@ export default function App() {
 
 
   return (
-    <div className="App"> 
-     
+    <div className="App">
+
       <BlurContainer blur={selectedMovie ? true : false}>
 
 
@@ -73,13 +73,13 @@ export default function App() {
         { /* ---- Dropdown   --------------------------------------------------- */}
         <Dropdown>
           <div>
-            <label><input type="checkbox" onChange={(e)=>e.target.checked ? addFilter("<year2k", (m: MovieData) => parseInt(m.Year) < 2000) : removeFilter("<year2k")} /> Before year 2000</label>
-            <label><input type="checkbox" onChange={(e)=>e.target.checked ? addFilter(">7.7imdb", (m: MovieData) => m.imdbRating > 7.5) : removeFilter(">7.7imdb")} /> High rated imdb</label>
+            <label><input type="checkbox" onChange={(e) => e.target.checked ? addFilter("<year2k", (m: MovieData) => parseInt(m.Year) < 2000) : removeFilter("<year2k")} /> Before year 2000</label>
+            <label><input type="checkbox" onChange={(e) => e.target.checked ? addFilter(">7.7imdb", (m: MovieData) => m.imdbRating > 7.5) : removeFilter(">7.7imdb")} /> High rated imdb</label>
 
           </div>
         </Dropdown>
 
-        { /* ---- Tabell ------------------------------- */}
+        { /* ---- Table ----------------------------------------- */}
 
         {filteredMovies &&
           <SortTable

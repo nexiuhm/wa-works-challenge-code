@@ -10,17 +10,17 @@ type Props = {
     blur: boolean
     children: React.ReactNode
 }
-export default function BlurContainer({blur,children}:Props) {
+export default function BlurContainer({ blur, children }: Props) {
 
-    
+
     const blurAmount = blur ? "50px" : "0px"
     console.log(blur);
 
-    return(
+    return (
 
-        
-        <div css={{filter: `blur(${blurAmount})`}}>{children}</div>
-       
+
+        <div css={{ filter: `blur(${blurAmount})` }}>{children}</div>
+
     )
 
 
