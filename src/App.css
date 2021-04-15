@@ -1,0 +1,12 @@
+.App {
+    margin: 0 auto;
+margin-top: 50px;
+width: 70%;
+word-wrap: break-word;
+color: white;
+font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+}

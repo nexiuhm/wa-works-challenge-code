@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/wa-works-challlenge/static/css/main.5533e96b.chunk.css",
+    "main.js": "/wa-works-challlenge/static/js/main.8c71ca1d.chunk.js",
+    "main.js.map": "/wa-works-challlenge/static/js/main.8c71ca1d.chunk.js.map",
+    "runtime-main.js": "/wa-works-challlenge/static/js/runtime-main.89074eeb.js",
+    "runtime-main.js.map": "/wa-works-challlenge/static/js/runtime-main.89074eeb.js.map",
+    "static/js/2.03811e05.chunk.js": "/wa-works-challlenge/static/js/2.03811e05.chunk.js",
+    "static/js/2.03811e05.chunk.js.map": "/wa-works-challlenge/static/js/2.03811e05.chunk.js.map",
+    "static/js/3.73faaba1.chunk.js": "/wa-works-challlenge/static/js/3.73faaba1.chunk.js",
+    "static/js/3.73faaba1.chunk.js.map": "/wa-works-challlenge/static/js/3.73faaba1.chunk.js.map",
+    "index.html": "/wa-works-challlenge/index.html",
+    "static/css/main.5533e96b.chunk.css.map": "/wa-works-challlenge/static/css/main.5533e96b.chunk.css.map",
+    "static/js/2.03811e05.chunk.js.LICENSE.txt": "/wa-works-challlenge/static/js/2.03811e05.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.89074eeb.js",
+    "static/js/2.03811e05.chunk.js",
+    "static/css/main.5533e96b.chunk.css",
+    "static/js/main.8c71ca1d.chunk.js"
+  ]
+}
